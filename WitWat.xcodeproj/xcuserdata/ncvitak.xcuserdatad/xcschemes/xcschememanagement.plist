@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WitWatKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>AE78AACD1BD4177A00CB112A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE78AAE71BD4181200CB112A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,20 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		AE78AAD21BD4177A00CB112A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78AAD11BD4177A00CB112A /* AppDelegate.swift */; };
-		AE78AAD41BD4177A00CB112A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78AAD31BD4177A00CB112A /* ViewController.swift */; };
 		AE78AAD71BD4177A00CB112A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78AAD51BD4177A00CB112A /* Main.storyboard */; };
 		AE78AAD91BD4177A00CB112A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE78AAD81BD4177A00CB112A /* Assets.xcassets */; };
 		AE78AADC1BD4177A00CB112A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE78AADA1BD4177A00CB112A /* LaunchScreen.storyboard */; };
+		AE78AB2A1BD437A200CB112A /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE78AB291BD437A200CB112A /* PostsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AE9A0DEF1BD97D0D00166BA9 /* WitWatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9A0DEC1BD97C8700166BA9 /* WitWatKit.framework */; };
+		AEB2DB291BD93D23001088D1 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2DB281BD93D23001088D1 /* CommentsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE9A0DEB1BD97C8700166BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9A0DE71BD97C8700166BA9 /* WitWatKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEB2DB341BD94D07001088D1;
+			remoteInfo = WitWatKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE78AAF41BD4181200CB112A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE78AACE1BD4177A00CB112A /* WitWat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WitWat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE78AAD11BD4177A00CB112A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE78AAD31BD4177A00CB112A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE78AAD61BD4177A00CB112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE78AAD81BD4177A00CB112A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE78AADB1BD4177A00CB112A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE78AADD1BD4177A00CB112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE78AB291BD437A200CB112A /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		AE9A0DE71BD97C8700166BA9 /* WitWatKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WitWatKit.xcodeproj; path = WitWatKit/WitWatKit.xcodeproj; sourceTree = "<group>"; };
+		AEB2DB281BD93D23001088D1 /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A0DEF1BD97D0D00166BA9 /* WitWatKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +68,7 @@
 			children = (
 				AE78AAD01BD4177A00CB112A /* WitWat */,
 				AE78AACF1BD4177A00CB112A /* Products */,
+				AE9A0DE71BD97C8700166BA9 /* WitWatKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +84,22 @@
 			isa = PBXGroup;
 			children = (
 				AE78AAD11BD4177A00CB112A /* AppDelegate.swift */,
-				AE78AAD31BD4177A00CB112A /* ViewController.swift */,
+				AE78AB291BD437A200CB112A /* PostsViewController.swift */,
+				AEB2DB281BD93D23001088D1 /* CommentsViewController.swift */,
 				AE78AAD51BD4177A00CB112A /* Main.storyboard */,
 				AE78AAD81BD4177A00CB112A /* Assets.xcassets */,
 				AE78AADA1BD4177A00CB112A /* LaunchScreen.storyboard */,
 				AE78AADD1BD4177A00CB112A /* Info.plist */,
 			);
 			path = WitWat;
+			sourceTree = "<group>";
+		};
+		AE9A0DE81BD97C8700166BA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9A0DEC1BD97C8700166BA9 /* WitWatKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +112,7 @@
 				AE78AACA1BD4177A00CB112A /* Sources */,
 				AE78AACB1BD4177A00CB112A /* Frameworks */,
 				AE78AACC1BD4177A00CB112A /* Resources */,
+				AE78AAF41BD4181200CB112A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,6 +129,7 @@
 		AE78AAC61BD4177A00CB112A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "UW-AppDEV";
 				TargetAttributes = {
@@ -109,12 +149,28 @@
 			mainGroup = AE78AAC51BD4177A00CB112A;
 			productRefGroup = AE78AACF1BD4177A00CB112A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE9A0DE81BD97C8700166BA9 /* Products */;
+					ProjectRef = AE9A0DE71BD97C8700166BA9 /* WitWatKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE78AACD1BD4177A00CB112A /* WitWat */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE9A0DEC1BD97C8700166BA9 /* WitWatKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WitWatKit.framework;
+			remoteRef = AE9A0DEB1BD97C8700166BA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE78AACC1BD4177A00CB112A /* Resources */ = {
@@ -134,7 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE78AAD41BD4177A00CB112A /* ViewController.swift in Sources */,
+				AEB2DB291BD93D23001088D1 /* CommentsViewController.swift in Sources */,
+				AE78AB2A1BD437A200CB112A /* PostsViewController.swift in Sources */,
 				AE78AAD21BD4177A00CB112A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +305,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WitWat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.uwaterloo.appdev.WitWat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,7 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WitWat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.uwaterloo.appdev.WitWat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +354,7 @@
 				AE78AAE21BD4177A00CB112A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
